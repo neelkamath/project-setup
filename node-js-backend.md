@@ -336,10 +336,6 @@ Relational DB library: [jOOQ](https://www.jooq.org/)
 
 </details>
 
-### Relational DB Migrations
-
-[Flyway](https://flywaydb.org/)
-
 ### Graph DB
 
 [Neo4j](https://neo4j.com/)

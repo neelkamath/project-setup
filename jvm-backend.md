@@ -360,7 +360,14 @@ Relational DB library: [jOOQ](https://www.jooq.org/)
 
 ### Relational DB Migrations
 
-[Flyway](https://flywaydb.org/)
+[Liquibase](https://www.liquibase.org/)
+
+<details>
+<summary>Reason</summary>
+
+- [Liquibase vs Flyway](https://www.baeldung.com/liquibase-vs-flyway)
+
+</details>
 
 ### Graph DB
 
