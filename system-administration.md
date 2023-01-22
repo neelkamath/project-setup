@@ -123,10 +123,6 @@ Each of the following tools should be used:
 
 </details>
 
-### Platform
-
-[Do]
-
 ## OS
 
 [Ubuntu](https://ubuntu.com/download/server)
