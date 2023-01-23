@@ -322,20 +322,6 @@ Kotlin might be superior, but I'm not sure because I haven't tried Kotlin for No
 
 </details>
 
-### Relational DB Library
-
-Relational DB library: [jOOQ](https://www.jooq.org/)
-
-<details>
-<summary>Reason</summary>
-
-- ORMs generate slow code.
-- ORMs require you to know not only SQL but their API as well.
-- Since ORMs use custom APIs, most SQL features cannot be used which causes a mix of the ORM and raw SQL being used in
-  the codebase which causes inconsistencies in style.
-
-</details>
-
 ### Graph DB
 
 [Neo4j](https://neo4j.com/)
