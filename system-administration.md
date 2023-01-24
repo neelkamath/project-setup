@@ -195,6 +195,16 @@ Each of the following tools should be used:
 
 </details>
 
+## RabbitMQ
+
+If the cloud provider doesn't support RabbitMQ (for example, AWS's RabbitMQ product doesn't support most plugins), then
+use [Stackhero](https://stackhero.io) because it's the cheapest available.
+
+## Ignite
+
+If the cloud provider doesn't support Ignite, then
+use [XenonStack](https://www.xenonstack.com/managed-services/apache-ignite/) as it's the cheapest available.
+
 ## Cosmos Blockchain Node Monitoring
 
 [PANIC](https://github.com/SimplyVC/panic)
