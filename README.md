@@ -53,14 +53,14 @@ How I set up my projects.
 ## Tools
 
 - [System administration](system-administration.md)
-- [JVM backend](jvm-backend.md)
+- [Kotlin/JVM backend](kotlin-jvm-backend.md)
 - [Node.js backend](node-js-backend.md)
 - [Frontend web](frontend-web.md)
 
 ## Contributing
 
 When updating a technology's entry, update it wherever else it's written about too. For example, there's a section of
-VCSes in both the [System Administration](system-administration.md) and [JVM Backend](jvm-backend.md) docs.
+VCSes in both the [System Administration](system-administration.md) and [JVM Backend](kotlin-jvm-backend.md) docs.
 
 ## License
 

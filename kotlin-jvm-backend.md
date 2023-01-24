@@ -1,4 +1,36 @@
-# JVM Backend
+# Kotlin/JVM Backend
+
+<details>
+<summary>Reason</summary>
+
+- Kotlin has the largest backend ecosystem. For example:
+  - The best message brokers, RocketMQ and RabbitMQ, have official JVM libraries but not Node.js ones. There is a third
+    party Node.js library for RabbitMQ, but it lacks critical features such as publisher confirms.
+  - The best relational DB library will be an SQL DSL. JVM has jOOQ but it's next to impossible to find such libraries
+    in other ecosystems.
+- It has the best developer tooling. For example:
+  - IntelliJ IDEA for Kotlin.
+  - Kotlin's coroutines support asynchronous programming, channels, reactive programming, etc.
+  - Unlike build systems in other ecosystems (Rust, JavaScript, Python, etc.), Gradle support scripting (comments,
+    custom functions which utilize the power of a full programming language, etc.), stress-free dependency management (
+    defaults to locked dependency versions unlike npm which defaults to downloading incompatible versions of specified
+    packages because of its caret syntax, no lock files to manage, etc.), plugins, and installs itself (granted that you
+    have JVM installed, Gradle will install itself along with the programming languages and libraries before compiling
+    and running your application - all in a single command).
+- It has the best syntax. For example:
+  - It's expressional.
+  - It supports advanced functional programming concepts such as `associateWith()`.
+  - It supports advanced OOP concepts such as sealed interfaces.
+- It compiles faster than Java even though it has more features (Java is considered to compile at a decently fast speed)
+  , and runs faster than Go (Go is considered to run at a decently fast speed).
+- It's multiplatform. If you use Kotlin/JS, you can install a JavaScript library, and it'll automatically download the
+  TypeScript type definitions package for you too. You can use it to build cross-platform mobile apps via Kotlin/Native.
+  It supports JVM, ES, native, GraalVM, etc.
+- It has the best standard library. There's builtin lazy loading. Every collection, whether it's an immutable set, or a
+  linked list, is just as easy to use because of consistent and concise APIs which allow developers to use the best data
+  structure rather than the one that's more ergonomic to use.
+
+</details>
 
 ## Message Broker
 
@@ -31,20 +63,6 @@
 
 - OpenJ9 doesn't have as much support as HotSpot and GraalVM.
 - OpenJ9 is significantly slower. Though it uses less memory, and starts up faster, it's only a small improvement.
-
-</details>
-
-## Programming Language
-
-[Kotlin](https://kotlinlang.org/)
-
-<details>
-<summary>Reason</summary>
-
-- Ergonomic syntax (expressional, functional programming, etc.).
-- Largest backend ecosystem via JVM.
-- Best developer tooling (JetBrains).
-- A lot of builtin and first party functionality such as lazy loading, and channels.
 
 </details>
 
