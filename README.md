@@ -112,6 +112,12 @@ How I set up my projects.
   Delayed Message Plugin. On a side note,
   the [RabbitMQ Message Deduplication Plugin](https://github.com/noxdafox/rabbitmq-message-deduplication/issues/80#issuecomment-1361307712)
   doesn't work if the messages are sent very close to each other such as during the same millisecond.
+- Use Google Drawings to create architecture diagrams as explained below:
+  - Use a white background rather than the default transparent one so that it's visible on dark backgrounds.
+  - The most readable background colors are cyan, green, yellow, and orange. Use them in this order when grouping
+    components as shown below:
+
+    ![Architecture diagram](diagram.png)
 
 ## Tools
 
