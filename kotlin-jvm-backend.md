@@ -273,7 +273,8 @@
 
 ### Layer
 
-[GraphQL](https://graphql.org/)
+If the API is for a client such as a frontend web app, or a microservice of a customer that queries your dataset,
+use [GraphQL](https://graphql.org/).
 
 <details>
 <summary>Reason</summary>
@@ -282,6 +283,34 @@
   rewriting the entire API layer later on will take a very long time. Even smaller APIs should use GraphQL because the
   overhead of using it is worth the benefits of static typing (input validation, clients know how to deserialize
   responses because of the `__typename` field, etc.).
+
+</details>
+
+If the API only exists because a function happens to exist on another microservice, use [gRPC](https://grpc.io/).
+
+<details>
+<summary>Reason</summary>
+
+- gRPC is essentially like calling a function that exists on another microservice. Its library makes it look like you're
+  calling a local function. It uses a custom format (Protocol Buffers rather than JSON) to send messages between
+  microservices for efficiency. It's not meant for querying data, or updating a DB like the typical API layer such as
+  REST is meant for.
+- It's the industry standard. For example, AWS lists gRPC as an option alongside HTTP when asking which type of
+  networking you'll require.
+- There's official support for every popular programming language.
+- It's always getting improved, and companies like Netflix have dumped their own systems in favor of this.
+
+</details>
+
+If the API is for internal purposes such as a health check used by the cloud to know whether to restart your
+microservice, or an admin API to reset a value stored in the DB, create a REST API.
+
+<details>
+<summary>Reason</summary>
+
+- This is because there's a negligible amount of data getting transferred, that too only occasionally. This means that
+  the overhead of setting up GraphQL and gRPC aren't worth it, and the efficiencies that they provide will never be
+  realized.
 
 </details>
 
