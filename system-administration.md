@@ -112,6 +112,15 @@ Each of the following tools should be used:
 
 [Kubernetes](https://kubernetes.io/)
 
+<details>
+<summary>Reason</summary>
+
+- It's the industry standard - it has great support.
+- It runs Docker images which means that we can package any tools that we want, use the same environment during
+  development and in production, etc.
+
+</details>
+
 ### Containers
 
 [Docker](https://www.docker.com/)
