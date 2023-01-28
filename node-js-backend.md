@@ -21,8 +21,7 @@ Kotlin might be superior, but I'm not sure because I haven't tried Kotlin for No
 
 ## Message Broker
 
-[RocketMQ](https://rocketmq.apache.org/) is better but [Kafka](https://kafka.apache.org/)
-/[RabbitMQ](https://www.rabbitmq.com/) can be used instead in case RocketMQ isn't available as a SaaS, etc.
+[RocketMQ](https://rocketmq.apache.org/)
 
 <details>
 <summary>Reason</summary>

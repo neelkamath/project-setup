@@ -4,7 +4,7 @@
 <summary>Reason</summary>
 
 - Kotlin has the largest backend ecosystem. For example:
-  - The best message brokers, RocketMQ and RabbitMQ, have official JVM libraries but not Node.js ones. There is a third
+  - RocketMQ and RabbitMQ have official JVM libraries but not Node.js ones. There is a third
     party Node.js library for RabbitMQ, but it lacks critical features such as publisher confirms.
   - The best relational DB library will be an SQL DSL. JVM has jOOQ but it's next to impossible to find such libraries
     in other ecosystems.
@@ -19,6 +19,8 @@
     and running your application - all in a single command).
 - It has the best syntax. For example:
   - It's expressional.
+  - It has a consistent and powerful collections interfaces.
+  - It has excellent utility functions such as picking a random element from a list
   - It supports advanced functional programming concepts such as `associateWith()`.
   - It supports advanced OOP concepts such as sealed interfaces.
 - It compiles faster than Java even though it has more features (Java is considered to compile at a decently fast speed)
@@ -34,8 +36,7 @@
 
 ## Message Broker
 
-[RocketMQ](https://rocketmq.apache.org/) is better but [Kafka](https://kafka.apache.org/)
-/[RabbitMQ](https://www.rabbitmq.com/) can be used instead in case RocketMQ isn't available as a SaaS, etc.
+[RocketMQ](https://rocketmq.apache.org/)
 
 <details>
 <summary>Reason</summary>
