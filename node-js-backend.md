@@ -290,7 +290,7 @@ microservice, or an admin API to reset a value stored in the DB, create a REST A
 
 ### REST/WebSocket Linter
 
-[Spectral](https://github.com/stoplightio/spectral)
+[Vacuum](https://github.com/daveshanley/vacuum)
 
 ### REST API Wrapper Library Generator
 
