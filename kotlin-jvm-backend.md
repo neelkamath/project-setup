@@ -334,6 +334,15 @@ microservice, or an admin API to reset a value stored in the DB, create a REST A
 
 [Vacuum](https://github.com/daveshanley/vacuum)
 
+<details>
+<summary>Reason</summary>
+
+- [Spectral](https://stoplight.io/open-source/spectral) is the best linter because it's not opinionated, and works out
+  of the box without any configuration. However, it's unusably slow. Vacuum is a drop-in replacement that uses
+  Spectral's rules under the hood, and takes a negligible amount of time to execute.
+
+</details>
+
 ### REST API Wrapper Library Generator
 
 [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator)
