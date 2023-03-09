@@ -271,3 +271,15 @@ Use one of:
 ## UI Component Docs
 
 [Storybook](https://storybook.js.org/)
+
+## Tool Manager
+
+[Volta](https://github.com/volta-cli/volta)
+
+<details>
+<summary>Reason</summary>
+
+- Node Version Manager doesn't automatically switch to the right Node.js version.
+- Node Version Manager is difficult to use (complicated installation instructions, doesn't work out of the box with fish shell, etc.).
+
+</details>
