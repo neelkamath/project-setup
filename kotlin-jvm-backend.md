@@ -489,3 +489,14 @@ partitioning, then use Neo4j.
 - Easy to learn and use.
 
 </details>
+
+## CI/CD Checks
+
+[Qodana](https://www.jetbrains.com/help/qodana/github.html)
+
+<details>
+<summary>Reason</summary>
+
+- This gives the checks of a JetBrains IDE which has more quality checks than every other tool combined.
+
+</details>

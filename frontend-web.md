@@ -117,6 +117,17 @@ Kotlin might be superior, but I'm not sure because I haven't tried Kotlin for fr
 
 [Keep a Changelog](https://github.com/olivierlacan/keep-a-changelog)
 
+## CI/CD Checks
+
+[Qodana](https://www.jetbrains.com/help/qodana/github.html)
+
+<details>
+<summary>Reason</summary>
+
+- This gives the checks of a JetBrains IDE which has more quality checks than every other tool combined.
+
+</details>
+
 ## Linting
 
 [ESLint](https://eslint.org/)
