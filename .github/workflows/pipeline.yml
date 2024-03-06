@@ -3,12 +3,13 @@ on:
     inputs:
       deployment:
         required: true
-        description: Deploy a git branch to a specified AWS deployment.
+        description: |
+          Deploy a git branch to a specified AWS deployment (<integration>, <dev>, <master>, or a git tag such as 
+          <v1.3.0>).
+        type: string
         default: integration
-        type: choice
-        options: [integration, dev, master, 'v\d+.\d+.\d+']
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo '${{ inputs.deployment }}'
+      - run: echo 'inputs.deployment: ${{ inputs.deployment }}'
