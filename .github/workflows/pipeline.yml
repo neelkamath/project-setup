@@ -17,5 +17,5 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
-          ref: ${{ inputs.deployment || 'main' }}
+          ref: ${{ inputs.deployment || 'v1.3.0' }}
       - run: echo '${{ inputs.deployment }}'
