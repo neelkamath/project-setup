@@ -13,7 +13,13 @@ on:
         type: choice
         options: [dry-run, integration, dev, master]
 jobs:
-  fmt:
+  first:
     runs-on: ubuntu-latest
+    if: inputs.deployment == ''
     steps:
-      - run: echo hello world; ${{ inputs.deployment }}
+      - run: echo "inputs.deployment == ''"
+  second:
+    runs-on: ubuntu-latest
+    if: inputs.deployment == 'dry-run'
+    steps:
+      - run: echo "inputs.deployment == 'dry-run'"
