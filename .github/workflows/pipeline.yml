@@ -12,4 +12,4 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'inputs.deployment: ${{ inputs.deployment }}'
+      - run: echo '${{ inputs.deployment }}'
