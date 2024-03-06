@@ -16,4 +16,4 @@ jobs:
   fmt:
     runs-on: ubuntu-latest
     steps:
-      - run: echo hello world
+      - run: echo hello world; ${{ inputs.deployment }}
