@@ -1,0 +1,21 @@
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      deployment:
+        required: true
+        description: |
+          Deploy a git branch to a specified AWS deployment (<integration>, <dev>, <master>, or a git tag such as 
+          <v1.3.0>).
+        default: integration
+        type: string
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+        #   ref: ${{ inputs.deployment || 'master' }}
+      - run: echo '${{ inputs.deployment }}'
