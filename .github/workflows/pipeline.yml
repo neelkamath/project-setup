@@ -1,0 +1,14 @@
+on:
+  workflow_dispatch:
+    inputs:
+      deployment:
+        required: true
+        description: Deploy a git branch to a specified AWS deployment.
+        default: integration
+        type: choice
+        options: [integration, dev, master, 'v\d+.\d+.\d+']
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo '${{ inputs.deployment }}'
