@@ -1,0 +1,19 @@
+name: CI/CD pipeline
+on:
+  push:
+    branches: [master, main]
+    tags: ['v\d+.\d+.\d+']
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      deployment:
+        required: true
+        description: Deploy a git branch to a specified AWS deployment. <dry-run> runs tests, etc. but doesn't deploy.
+        default: dry-run
+        type: choice
+        options: [dry-run, integration, dev, master]
+jobs:
+  fmt:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello world
